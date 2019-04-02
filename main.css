@@ -1,0 +1,112 @@
+body{
+    padding:0;
+    margin: 0;
+    text-align: center;
+    font-size: calc(5px + 2vh);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.headstyle{
+    position: fixed;
+    background: rgb(119, 116, 116);
+    display: block;
+    width: 100%;
+    top: 0;
+    color: white;
+}
+
+/* Price Table Boxes */
+.Tables{
+    width: 100%;
+    margin-top: 300px;
+}
+.container{
+    float: left;
+    box-sizing: border-box;
+    width: 33.3%;
+    padding: 0;
+    transition: 0.5s;
+    border: 10px solid white;
+    border-radius: 40px;
+    color: white;
+    min-height: 500px;
+}
+
+.container.services{
+    color: black
+}
+
+.container.green{
+    background: rgb(7, 100, 15);
+}
+
+.container.gold{
+    background: rgb(207, 177, 3);
+}
+
+.container.red{
+    background: rgb(151, 7, 7);
+}
+
+/*List elements*/
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+
+li{
+    padding: 15px 5px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+
+.top{
+    font-weight: 900;
+}
+
+.bottom{
+    border: none;
+    margin-top: 14px;
+}
+
+.bottom a{
+    background: white;
+    color: rgb(15, 10, 8);
+    padding: 15px;
+}
+
+/* Footer */ 
+.Footer{
+    clear: left;
+    padding: calc(10px + 1vh);
+    font-size: calc(12px + 1vh);
+    background: rgb(119, 116, 116);
+    color: white;
+    position:  absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*For small width devices */
+@media(max-width:920px){
+    body{
+        font-size: calc(5px +1vh);
+    }
+    .container{
+        clear: left;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .Footer{
+        position: relative;
+    }
+}
